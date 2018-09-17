@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CallEventCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCU-PQ-jpF">
+                        <rect key="frame" x="10" y="5" width="248.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="10:59 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hy-G5-WOV">
+                        <rect key="frame" x="268.5" y="5" width="41.5" height="11"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5s8-8x-xIB">
+                        <rect key="frame" x="10" y="27.5" width="24" height="11"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1hy-G5-WOV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="6R3-VY-NCV"/>
+                    <constraint firstItem="UCU-PQ-jpF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Hrt-Tv-Pb5"/>
+                    <constraint firstAttribute="trailing" secondItem="1hy-G5-WOV" secondAttribute="trailing" constant="10" id="ICd-CV-auW"/>
+                    <constraint firstAttribute="bottom" secondItem="5s8-8x-xIB" secondAttribute="bottom" constant="5" id="V0C-ns-8W2"/>
+                    <constraint firstItem="UCU-PQ-jpF" firstAttribute="top" secondItem="1hy-G5-WOV" secondAttribute="top" id="e2N-9c-lRh"/>
+                    <constraint firstItem="5s8-8x-xIB" firstAttribute="top" secondItem="UCU-PQ-jpF" secondAttribute="bottom" constant="2" id="oIF-kI-cNa"/>
+                    <constraint firstItem="1hy-G5-WOV" firstAttribute="leading" secondItem="UCU-PQ-jpF" secondAttribute="trailing" constant="10" id="uxb-h1-nsU"/>
+                    <constraint firstItem="UCU-PQ-jpF" firstAttribute="leading" secondItem="5s8-8x-xIB" secondAttribute="leading" id="xt6-q0-9XJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="constraintLabelBodyHorizontalSpaceToLabelDate" destination="uxb-h1-nsU" id="jQu-eC-ds1"/>
+                <outlet property="constraintLabelBodyLeft" destination="Hrt-Tv-Pb5" id="aSg-yA-SmP"/>
+                <outlet property="constraintLabelBodyVerticalSpaceToLabelDuration" destination="oIF-kI-cNa" id="hAw-mT-hpn"/>
+                <outlet property="constraintLabelDateRight" destination="ICd-CV-auW" id="MaQ-eO-Urf"/>
+                <outlet property="constraintLabelDateTop" destination="6R3-VY-NCV" id="pDc-V8-43s"/>
+                <outlet property="constraintLabelDurationBottom" destination="V0C-ns-8W2" id="gjH-Im-iec"/>
+                <outlet property="labelBody" destination="UCU-PQ-jpF" id="I2l-NR-8ED"/>
+                <outlet property="labelDate" destination="1hy-G5-WOV" id="DQA-H7-RIw"/>
+                <outlet property="labelDuration" destination="5s8-8x-xIB" id="ZHZ-J5-Wbm"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

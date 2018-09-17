@@ -1,0 +1,379 @@
+/*
+ Localizable.strings
+ instac
+ 
+ Created by Bozhko Terziev on 11/21/14.
+ Copyright (c) 2014 SoftAvail. All rights reserved.
+ */
+
+// Alert Messages
+"Alert:Message:InvalidEmail"                            = "Invalid email.";
+"Alert:Message:WrongPassword"                           = "Passwords do not match.";
+"Alert:Message:Username:Empty"                          = "Username cannot be empty";
+"Alert:Message:PhoneNumber:Empty"                       = "Phone number cannot be empty";
+"Alert:Ok"                                              = "OK";
+"Alert:Continue"                                        = "Continue";
+"Alert:Positive:Yes"                                    = "Yes";
+"Alert:Negative:No"                                     = "No";
+"Alert:Info"                                            = "Info";
+"Alert:Error"                                           = "Error";
+"Alert:Cancel"                                          = "Cancel";
+"Alert:Close"                                           = "Close";
+"Alert:Warning"                                         = "Warning";
+"Alert:Not:Implemented"                                 = "Not Implemented.";
+"Alert:Question:Logout"                                 = "Are you sure you want to logout?";
+"Alert:Question:LogoutWhenInVideoCall"                  = "You are currently in a video call. If you continue it will be disconnected. Do you want to proceed ?";
+"Alert:Question:LogoutWhenInChatCall"                   = "You are currently in a chat call. If you continue it will be disconnected. Do you want to proceed ?";
+"Alert:Question:HangCallInProgressAcceptNew"            = "There is a call in progress. If you accept the new one, the current will be disconnected. Do you want to proceed ?";
+"Alert:Question:HangCallInProgressStartNew"             = "There is a call in progress. If you start a new one, the current will be disconnected. Do you want to proceed ?";
+"Alert:Message:PasswordReset:Success"                    = "You have successfully reset your password.";
+"Alert:Message:PasswordReset:Failure"                    = "An error occurred while resetting your password.";
+"Alert:Message:UnsupportedUrl"                          = "Url <%@> cannot be processed.";
+"Alert:Message:InvalidUrl"                              = "Url <%@> seems to be invalid. Please enter a valid url";
+"Alert:Message:EmptyUrl"                                = "Url is empty. Please enter a valid url";
+"Alert:Message:LoginFailedNoConnection"                 = "It seems you are not currently connected. Please check your settings and try again.";
+"Alert:Message:LoginFailedUnauthorized"                 = "Wrong user name or password.";
+"Alert:Error:IncomingCallNoConnection"                  = "This call can not be accepted because we can not establish connection to the server.";
+"Alert:Edit:Placeholder"                                = "Type your message here ...";
+"Alert:Edit:Placeholder:ProspectLeftThePage"            = "The Prospect has left the page";
+"Alert:Edit:Placeholder:ConnectingTo"                   = "Connecting To: %@";
+"Alert:Edit:Placeholder:ChatEnded"                      = "Chat ended";
+"Alert:VideoCall:CannotPlaceCallDuringGSMCall"          = "%@ call cannot be placed while GSM call is in progress. To place a call via %@, you must first end your current GSM call.";
+
+
+// Login Screen
+"Login:Title:Text"                                      = "Login";
+"Login:Placeholder:Username"                            = "Username";
+"Login:Placeholder:Password"                            = "Password";
+"Login:Button:Enter:Title"                              = "ENTER";
+"Login:Button:Forgot:Password:Title"                    = "Forgot your password?";
+"Login:Button:Create:Account:Title"                     = "Don't have an account? Sign up here.";
+"Login:Button:Create:Account:Attr:String"               = "Sign up here.";
+"Login:Activity:Text:SigningIn"                         = "Signing in ...";
+"Login:Activity:Text:SigningUp"                         = "Signing up ...";
+"Login:Activity:Text:Please:Wait"                       = "Please wait ...";
+"Login:Activity:Text:Logout"                            = "Logging out ...";
+"Login:Button:Text:GoToClient"                          = "Go To Client";
+"Login:Button:Text:GoToHost"                            = "Go To Host";
+
+// Sign Up Screen
+"SignUp:Title:Text"                                     = "SIGN UP";
+"SignUp:Placeholder:FirstName"                          = "First name";
+"SignUp:Placeholder:LastName"                           = "Last name";
+"SignUp:Placeholder:Email"                              = "Email";
+"SignUp:Placeholder:PhoneNumber"                        = "Phone number";
+"SignUp:Placeholder:Company"                            = "Company";
+"SignUp:Placeholder:Username"                           = "Username";
+"SignUp:Placeholder:Password"                           = "Password";
+"SignUp:Placeholder:RepeatPassword"                     = "Repeat password";
+"SignUp:Button:Enter:Title"                             = "ENTER";
+"SignUp:Button:Cancel:Title"                            = "CANCEL";
+"SignUp:Error:WrongCrendentials"                        = "Wrong user name or password";
+
+// Share Screen
+"Share:Title:Text"                                      = "Congratulations";
+"Share:Title:Text:Share"                                = "Invite Customers";
+"Share:String:ShortUrl"                                 = "Here is your personal link, which customers will use to video call you:";
+"Share:String:ShareOptions"                             = "Do you want to share your link now?";
+"Share:Button:Next:Title"                               = "NEXT";
+"Share:Button:Cancel:Title"                             = "CANCEL";
+"Share:Button:OK:Title"                                    = "OK";
+
+// Configure Availability Screen
+"ConfigureAvailability:Title"                           = "Configure Availability";
+"ConfigureAvailability:Button:AddWorkAddress:Title"     = "Add Work Address";
+"ConfigureAvailability:Label:UseLocationBasedPresence"  = "Use Location Based Presence";
+
+"ConfigureAvailability:Button:Cancel:Title"             = "Cancel";
+"ConfigureAvailability:Button:Save:Title"               = "Save";
+"ConfigureAvailability:Placeholder:LocationName"        = "Location Name";
+"ConfigureAvailability:Placeholder:SearchAddress"       = "Search Address";
+
+// Call Screens
+"Call:Ended:Title:Label:Format"                         = "Hi, %@";
+"Call:RequestVisitorInfo:Button"                        = "Request phone & email";
+"Call:Title:Email"                                      = "Email:";
+"Call:Title:Phone"                                      = "Phone:";
+"Call:Title:Viewing"                                    = "VIEWING:";
+"Call:Title:IncomingCall"                               = "Incoming video call";
+"Call:AudioSource:Mute"                                    = "Mute";
+"Call:AudioSource:Unmute"                                = "Unmute";
+"Call:AudioSource:Speaker"                                = "Speaker";
+"Call:AudioSource:Bluetooth"                            = "Bluetooth";
+"Call:AudioSource:Cancel"                                = "Cancel";
+"Call:AudioSource:Hide"                                 = "Hide";
+"Call:AudioSource:Receiver"                                = "iPhone";
+
+"Call:CameraSource:Front"                                = "Front Camera";
+"Call:CameraSource:Back"                                = "Back Camera";
+"Call:CameraSource:None"                                = "No Camera";
+
+// Forgotten Password Screen
+"Forgotten:Password:Title:Text"                         = "Reset Password";
+"Forgotten:Password:Placeholder:Username"               = "Username";
+"Forgotten:Password:Placeholder:Email"                  = "Email";
+"Forgotten:Password:Button:Send:Title"                  = "Send New Password";
+"Forgotten:Password:Button:Cancel:Title"                = "CANCEL";
+"Forgotten:Password:Activity:Reset:Pass"                = "Resetting password ...";
+
+// Action Sheet
+"ActionSheet:Cancel"                                    = "Cancel";
+"ActionSheet:Integration"                               = "Invite Customers for Video Call";
+"ActionSheet:About"                                     = "About";
+"ActionSheet:Logout"                                    = "Logout";
+
+//Actions For Calling Online Agent
+"ActionSheet:ActionsForCallingOnlineAgent:Title"        = "How do you want to reach %@ ?";
+"ActionSheet:ActionsForCallingOnlineAgent:Text"         = "Text";
+"ActionSheet:ActionsForCallingOnlineAgent:Audio"        = "Audio Only";
+"ActionSheet:ActionsForCallingOnlineAgent:Video"        = "Video";
+
+//Actions For Calling Offline Agent
+"ActionSheet:ActionsForCallingOfflineAgent:Title"       = "%@ is not available. You can contact this agent by:";
+"ActionSheet:ActionsForCallingOfflineAgent:Phone"       = "Phone";
+"ActionSheet:ActionsForCallingOfflineAgent:Email"       = "Email";
+
+/*  Integration View Controller*/
+"Integration:String:ShortUrl"                           = "Here is your personal link, which customers will use to video call you:";
+"Integration:String:Share"                              = "Do you want to share your link now?";
+"Integration:Button:Cancel:Title"                       = "Cancel";
+"Integration:Button:Ok:Title"                           = "OK";
+"Integration:Button:Share:Title"                        = "Share";
+"Integration:Button:Close:Title"                        = "Close";
+
+"LocalNotification:IncomingCall"                        = "Incoming Call";
+"LocalNotification:IncomingChat"                        = "Incoming Chat";
+"Call:IncommingCall:Answer"                                = "Answer";
+"Call:IncommingCall:Reject"                                = "Reject";
+"Call:IncommingChat:Reply"                              = "Reply";
+"Call:NewChatMessage:View"                              = "View";
+
+"LocalNotification:Hungup"                              = "hung up";
+"LocalNotification:CallerHungup"                        = "Caller hung up";
+"Call:MissedCall:SendText"                                = "Send Text";
+"Call:MissedCall:CallBack"                                = "Call Back";
+
+"LocalNotification:CallAnsweredByThisAccountOnAnotherDevice"    = "Answered On Another Device";
+"LocalNotification:CallAnsweredByAccount"               = "Answered By: %@";
+
+"Welcome:String:ShortUrl"                                = "Enter short url";
+
+/* Welcome Table View Controller */
+"Welcome:Title:Text"                                    = "Welcome";
+"Welcome:Title:AgentUrl"                                = "Agent URL";
+"Welcome:Button:Next"                                   = "Next";
+
+/* Join Table View Controller */
+"Join:Title:Text"                                       = "SIGN UP";
+"Join:SubTitle:Text"                                    = "To establish a live video connection, please fill in the following information:";
+"Join:Button:Text:Connect"                              = "OK";
+"Join:Switch:Text"                                      = "Let the agent see me, Share Video";
+
+"OK"                                                    = "OK";
+
+/* Dialing View */
+"Dialing:Buton:Cancel"                                  = "Cancel";
+"Dialing:Label:Description"                             = "Waiting to connect";
+
+"Error:CalleeNotFound"                                  = "Agent not available for calling";
+"Error:CalleeGeneric"                                   = "An error occurred while calling the Agent";
+"Error:CallRejected"                                    = "Remote party has rejected the call";
+
+/* Call View */
+"Hang Up"                                               = "Hang Up";
+"Answer"                                                = "Answer";
+"Decline"                                               = "Decline";
+"Hold & Answer"                                         = "Hold & Answer";
+"End & Answer"                                          = "End & Answer";
+
+/*Vanity Root Cell*/
+"Vanity:Root:Phone"                                     = "Phone: %@";
+"Vanity:Root:Email"                                     = "Email: %@";
+"Vanity:Root:IP Address"                                = "IP Address: %@";
+"Vanity:Root:Location"                                  = "Location: %@";
+"Vanity:Root:Viewing"                                   = "";
+"Vanity:Root:Os:Browser"                                = "OS: %@, Browser: %@";
+"Vanity:Root:Call"                                      = "Call";
+"Vanity:Root:Chat"                                      = "Chat";
+"Vanity:Root:End:Call"                                  = "End Call";
+"Vanity:Root:Resume"                                    = "Resume";
+"Vanity:Root:Hangup"                                    = "Hang up";
+"Vanity:Root:Remove"                                    = "Remove";
+"Vanity:Root:TakeCall"                                  = "Take \n the call";
+
+"Vanity:Header:Label:Available"                         = "AVAILABLE";
+"Vanity:Header:Label:NotAvailable"                      = "NOT AVAILABLE";
+"Vanity:AvailabilityNotification:Available"             = "Available";
+"Vanity:AvailabilityNotification:NotAvailable"          = "Not Available";
+
+"Vanity:Label:Text:State:OnHold"                        = "This call is put on hold";
+"Vanity:Button:Text:OnHold"                             = "Resume";
+"Vanity:Button:Text:InProgressByOther"                  = "Click Here";
+"Vanity:Label:Text:State:InProgress"                    = "You have a call in progress";
+"Vanity:Label:Text:State:InProgressByOther"             = "You have a call in progress. To take it on this device";
+"Vanity:Label:Text:State:InProgressByOtherAgent"        = "Call has been answered by %@.";
+"Vanity:Label:Text:State:VideoCalling"                  = "Calling ...";
+"Vanity:Label:Text:State:VideoTransferWaiting"          = "Connecting ...";
+"Vanity:Label:Text:State:Away"                          = "Away";
+"Vanity:Activity:Waiting:For:Chat"                      = "Waiting for chat ...";
+"Vanity:Participant:Caller"                             = "Caller";
+
+"Large:Cell:StateCallRinging"                           = "Incoming call request. Tap Answer to take it.";
+"Large:Cell:StateCallInProgress"                        = "Call in progress. Tap the row to continue.";
+"Large:Cell:StateCallInProgressByOtherMe"               = "You have a call in progress. To take it on this device click here.";
+"Large:Cell:StateCallInProgressBySomeoneElse"           = "Call has been answered by %@";
+"Large:Cell:StateCallOnHold"                            = "Call on hold. Tap resume to continue.";
+"Large:Cell:StateCallRingingBySomeoneElse"              = "Contacted by: %@";
+"Large:Cell:StateChatRinging"                           = "New chat request. Tap Chat to take it.";
+"Large:Cell:StateChatInProgress"                        = "Chat in progress. Tap the row to continue.";
+"Large:Cell:StateChatInProgressByOtherMe"               = "You have a chat in progress on another device.";
+"Large:Cell:StateChatInProgressBySomeoneElse"           = "Being helped by: %@";
+"Large:Cell:StateChatRingingBySomeoneElse"              = "Contacted by: %@";
+"Large:Cell:StateIdleActivatedAndReturning"             = "Returing customer";
+"Large:Cell:StateChatRinging:Mine"                      = "Wait for chat to be accepted";
+"Large:Cell:StateCallRinging:Mine"                      = "Wait for call to be accepted";
+
+"ChatScreen:StateHelpedBySomeoneElse"                   = "Being helped by: %@";
+"ChatScreen:StateContactedBySomeoneElse"                = "Contacted by: %@";
+"ChatScreen:Warning:AngagedBySomeoneElse"               = "Visitor is engaged by another agent, if you continue you will interrupt it! Are you sure you want to continue?";
+
+/*Chat Screen*/
+"Chat:Button:Send"                                      = "SEND";
+"Chat:Empty:Message:Error"                              = "Empty message is not allowed";
+"Chat:Max:Message:Length:Error"                         = "Maximum message length of %@ characters exceeded";
+"Chat:Status:Failed"                                    = "Failed";
+"Chat:Waiting:For:Accept"                               = "Please wait while %@ accepts the chat!";
+"Chat:Waiting:For:Accept:Anonymous"                     = "Please wait while the other party accepts the chat!";
+"Chat:Tap:To:Send"                                      = "Tap Send to start a chat with %@";
+"Chat:Tap:To:Send:Anonimous"                            = "Tap Send to start a chat with the other party";
+"Chat:Status:Transfer:Canceled"                         = "Transfer canceled";
+"Chat:Status:Transfer:Accepted"                         = "Transfer call accepted by: %@";
+"Chat:Status:Transfer:Rejected"                         = "Transfer rejected";
+"Chat:Status:Transfer:Failed"                           = "Transfer failed";
+"Chat:Status:Transfer:InProgress"                       = "Transfer call in progress";
+
+
+/*Main Controller*/
+"Main:Button:Text:Base"                                 = "I am a";
+"Main:Button:Text:Agent"                                = "Host";
+"Main:Button:Text:Client"                               = "Client";
+
+/*Initial Controller*/
+"Initial:Section:Header:Text:SignUp"                    = "Sign Up";
+"Initial:Section:Header:Text:Login"                     = "Login";
+"Initial:Section:Header:Text:Join"                      = "Connect";
+"Initial:ThumbPrint:Text"                               = "Authenticate using your finger";
+
+/* generic protocol errors */
+"Rest:Error:Unknown"                                    = "Internal server error";
+
+/* Vanity Root View Controller */
+"Vanity:Root:Title"                                     = "Visitor List";
+"Vanity:Root:ProspectTitle"                             = "Dashboard";
+
+/* Image picker controller */
+"ActionSheet:ChangeProfileImage:TakePhoto"              = "Take photo or video";
+"ActionSheet:ChangeProfileImage:PickPhoto"              = "Choose from gallery";
+"ActionSheet:ChangeProfileImage:RemovePhoto"            = "Remove profile picture";
+
+/* Slide Out Menu */
+"Slideout:Menu:Vanity"                                  = "Visitor List";
+"Slideout:Menu:Dashboard"                               = "Dashboard";
+"Slideout:Menu:Invite"                                  = "Invite Customers";
+"Slideout:Menu:Preferences"                             = "My Info";
+"Slideout:Menu:About"                                   = "About";
+"Slideout:Menu:ConfigureAvailability"                   = "Configure Availability";
+"Slideout:Menu:Report"                                  = "Submit a Report";
+"Slideout:Menu:Logout"                                  = "Logout";
+"Slideout:Menu:Report:Alert"                            = "Submitting a report ... \n";
+"Slideout:Menu:Report:Alert:Done:Ttile"                 = "We got it";
+"Slideout:Menu:Report:Alert:Done:Body"                  = "Thank you for submitting a report to us.";
+
+// Location
+"Alert:Location:NotEnabledTitle"                        = "Warning";
+"Alert:Location:NotEnabledQuestion"                     = "In order to use location based presence, please enable %@ to always use location services in Settings->Privacy->Location Services.";
+"Alert:Answer:DontAskAgain"                             = "Don't ask again";
+"Alert:Error:AddLocation"                               = "Failed to add availability location";
+
+"PersonalInfo:Placeholder:Name"                         = "Name";
+"PersonalInfo:Placeholder:Email"                        = "Email";
+"PersonalInfo:Placeholder:Phone"                        = "Phone number";
+"PersonalInfo:Title"                                    = "Personal Information";
+"PersonalInfo:Button:Continue"                          = "Continue";
+"PersonalInfo:Button:Anonymous"                         = "Continue Anonymous";
+"PersonalInfo:Button:Cancel"                            = "Cancel";
+
+"PersonalInfo:InvalidName:Error"                        = "Please, enter your name";
+"PersonalInfo:InvalidEmail:Error"                       = "Please, enter a valid email address";
+"PersonalInfo:InvalidPhone:Error"                       = "Please, enter a valid phone number";
+"PersonalInfo:Change:Photo"                             = "Change Photo";
+
+"VideoScene:Info:OneWayAudio"       = "Your call has started, but it seems the other party is experiencing a technical difficulty and you will not be able to hear them.";
+"VideoScene:Info:OneWayAudioVideo"  = "Your call has started, but it seems the other party is experiencing a technical difficulty and you will not be able to hear or see them.";
+
+"LocalNotification:NewMessage"                          = "New message";
+"Alert:EscalateCall:Info"                               = "This chat session will be escalated to video call and transferred to a sales agent";
+
+"Notification:Caller:HangUp"                            = "The visitor has ended the call";
+"Notification:Caller:Left"                              = "The visitor has already left the website";
+"Notification:Callee:NotAvailable"                      = "The visitor you are trying to reach is not available";
+"Notification:Callee:Action:NotAvailable"               = "The visitor is not applicable for a call";
+
+// Call wrap screens
+"Callwrap:Info:Format"                                  = "Please fill out the information for the call that started at %@ with %@ about %@";
+"Callwrap:Sales:Screen"                                 = "Sale Made";
+"Callwrap:Appointment:Screen"                           = "Appointment Set";
+"Callwrap:Callback:Screen"                              = "Callback";
+"Callwrap:Other:Screen"                                 = "Other";
+"Callwrap:Title:Screen"                                 = "Call Wrap Up";
+
+// Call edit wrap section titles
+"CallEditWrap:Section:What"                             = "What did you sell?";
+"CallEditWrap:Section:When"                             = "When?";
+"CallEditWrap:Section:Happened"                         = "What happend?";
+
+
+// Call Transfer Popover
+"Call:Transfer:Popover:Close"                           = "Close";
+"Call:Transfer:Popover:Title"                           = "Recipients";
+"Call:Transfer:Footer:Text"                             = "Video Transfer";
+"Call:Transfer:Empty:Table"                             = "Nobody can accept calls at this time";
+
+// Returning visitor
+"LocalNotification:ReturningVisitor"                    = "is back";
+"Call:ReturningVisitor:SendText"                        = "Send Text";
+"Call:ReturningVisitor:CallBack"                        = "Call Back";
+
+"History:Pull:Load"                                     = "Pull to load more messages";
+"History:Full:Load"                                     = "No more messages to load";
+"History:Loading:More"                                  = "Loading...";
+"History:Event:MissedChat"                              = "Unanswered chat";
+"History:Event:MissedCall:From"                         = "Missed call from %@";
+"History:Event:UnAnsweredChat"                          = "Unanswered chat";
+"History:Event:UnAnsweredCall"                          = "Unanswered call";
+"History:Event:IncomingCall:Me"                         = "%@ called you";
+"History:Event:IncomingCall:Other"                      = "%@ called %@";
+"History:Event:OutgoingCall"                            = "Outgoing call";
+"History:Event:OutgoingCall:Me"                         = "You called %@";
+"History:Event:OutgoingCall:Other"                      = "%@ called %@";
+"History:Date:Today"                                    = "Today";
+"History:Date:Yesterday"                                = "Yesterday";
+"History:Me"                                            = "Me";
+"History:You"                                           = "You";
+
+"Duration:Hours:Minutes:Seconds"                        = "%d hours %d minutes %d seconds";
+"Duration:Hours:Minutes"                                = "%d hours %d minutes";
+"Duration:Hours:Seconds"                                = "%d hours %d seconds";
+"Duration:Hours"                                        = "%d hours";
+"Duration:Minutes:Seconds"                              = "%d minutes %d seconds";
+"Duration:Minutes"                                      = "%d minutes";
+"Duration:Seconds"                                      = "%d seconds";
+
+"Call:PoorNetwork:Description"                          = "Poor network connectivity. Video not available.";
+
+"Join:Button:Submit:Report:Title"                       = "Submit a Report";
+"Join:Button:Submit:Report:Alert"                       = "Submitting a report ... \n";
+"Join:Button:Submit:Report:Alert:Done:Ttile"            = "We got it";
+"Join:Button:Submit:Report:Alert:Done:Body"             = "Thank you for submitting a report to us.";
+
+

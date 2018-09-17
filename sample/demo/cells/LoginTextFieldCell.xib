@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoginTextFieldCell" rowHeight="61" id="Yqw-UU-4Qr" customClass="LoginTextFieldCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yqw-UU-4Qr" id="Jir-aJ-qvl">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5P1-QR-0Yi" customClass="ICOLLRoundedTextFieldView">
+                        <rect key="frame" x="20" y="8" width="280" height="44"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dyc-Ka-nbT" customClass="ICOLLTextField">
+                                <rect key="frame" x="40" y="5" width="230" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="IhA-9U-MNC"/>
+                                    <constraint firstAttribute="width" constant="230" id="K1J-sn-XlH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="67y-Q3-3AX">
+                                <rect key="frame" x="13" y="14" width="16" height="16"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="byD-JD-cEY"/>
+                                    <constraint firstAttribute="height" constant="16" id="qE6-Lo-Elw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="underline" translatesAutoresizingMaskIntoConstraints="NO" id="Nez-lQ-1WG">
+                                <rect key="frame" x="0.0" y="29" width="280" height="10"/>
+                                <color key="backgroundColor" red="1" green="0.04498420568" blue="0.046067165479999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="RzV-PK-mNW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="67y-Q3-3AX" firstAttribute="leading" secondItem="5P1-QR-0Yi" secondAttribute="leading" constant="13" id="bT9-uW-EjJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Nez-lQ-1WG" secondAttribute="trailing" id="e5y-AP-Pu2"/>
+                            <constraint firstAttribute="bottom" secondItem="Nez-lQ-1WG" secondAttribute="bottom" constant="5" id="jgy-Qe-XOl"/>
+                            <constraint firstItem="Nez-lQ-1WG" firstAttribute="leading" secondItem="5P1-QR-0Yi" secondAttribute="leading" id="mTA-vA-8Fz"/>
+                            <constraint firstAttribute="centerY" secondItem="67y-Q3-3AX" secondAttribute="centerY" id="naK-7j-Nru"/>
+                            <constraint firstAttribute="height" constant="44" id="oXd-sX-d4r"/>
+                            <constraint firstItem="dyc-Ka-nbT" firstAttribute="leading" secondItem="5P1-QR-0Yi" secondAttribute="leading" constant="40" id="tqd-rB-1tr"/>
+                            <constraint firstAttribute="centerY" secondItem="dyc-Ka-nbT" secondAttribute="centerY" id="v9i-SF-DGV"/>
+                            <constraint firstAttribute="width" constant="280" id="wjU-5T-aYe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="5P1-QR-0Yi" secondAttribute="centerY" id="Op6-sC-wtk"/>
+                    <constraint firstAttribute="centerX" secondItem="5P1-QR-0Yi" secondAttribute="centerX" id="mFd-P3-HOC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="baseRoundedView" destination="5P1-QR-0Yi" id="Mab-37-Wng"/>
+                <outlet property="imgView" destination="67y-Q3-3AX" id="APL-bp-G0c"/>
+                <outlet property="imgViewUnderline" destination="Nez-lQ-1WG" id="OLI-RK-h0j"/>
+                <outlet property="textField" destination="dyc-Ka-nbT" id="fDk-EE-9dK"/>
+            </connections>
+            <point key="canvasLocation" x="441" y="298"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="underline" width="10" height="10"/>
+    </resources>
+</document>

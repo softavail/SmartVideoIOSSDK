@@ -1,0 +1,21 @@
+//
+//  demo.pch
+//  demo
+//
+//  Created by Angel Terziev on 3.01.18.
+//  Copyright © 2018 VideoEngager. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_7_0
+#warning "This project uses features only available in iOS SDK 7.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+    // System
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+#endif

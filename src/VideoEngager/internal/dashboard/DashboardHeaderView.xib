@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DashboardHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9M-kw-uuQ">
+                    <rect key="frame" x="15" y="5" width="290" height="59.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9Q-NV-MZm">
+                    <rect key="frame" x="15" y="134.5" width="290" height="59.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XI2-0f-wtl">
+                    <rect key="frame" x="15" y="69.5" width="290" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="q9M-kw-uuQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="2bI-vx-khv"/>
+                <constraint firstItem="XI2-0f-wtl" firstAttribute="top" secondItem="q9M-kw-uuQ" secondAttribute="bottom" constant="5" id="3Ip-aE-iRh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="q9Q-NV-MZm" secondAttribute="bottom" constant="5" id="6TN-U5-HOS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="q9Q-NV-MZm" secondAttribute="trailing" constant="15" id="Cn1-Uc-mrV"/>
+                <constraint firstItem="q9Q-NV-MZm" firstAttribute="top" secondItem="XI2-0f-wtl" secondAttribute="bottom" constant="5" id="Foi-VQ-9Kv"/>
+                <constraint firstItem="q9Q-NV-MZm" firstAttribute="top" secondItem="XI2-0f-wtl" secondAttribute="bottom" constant="5" id="M8S-uA-ioC"/>
+                <constraint firstItem="XI2-0f-wtl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="Mus-Le-bHK"/>
+                <constraint firstItem="q9Q-NV-MZm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="XOl-8O-6t6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XI2-0f-wtl" secondAttribute="trailing" constant="15" id="YLv-Rn-5ZB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="q9M-kw-uuQ" secondAttribute="trailing" constant="15" id="ejs-0f-tfd"/>
+                <constraint firstItem="XI2-0f-wtl" firstAttribute="top" secondItem="q9M-kw-uuQ" secondAttribute="bottom" constant="5" id="hv4-r6-dEh"/>
+                <constraint firstItem="XI2-0f-wtl" firstAttribute="height" secondItem="q9M-kw-uuQ" secondAttribute="height" id="kM5-cD-LYX"/>
+                <constraint firstItem="q9M-kw-uuQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="lZk-l9-ta9"/>
+                <constraint firstItem="q9Q-NV-MZm" firstAttribute="height" secondItem="q9M-kw-uuQ" secondAttribute="height" id="pCg-lC-AOf"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="labelEmail" destination="XI2-0f-wtl" id="dgR-gj-Ud5"/>
+                <outlet property="labelName" destination="q9M-kw-uuQ" id="bvG-MT-6v9"/>
+                <outlet property="labelPhone" destination="q9Q-NV-MZm" id="7xr-yX-WYv"/>
+            </connections>
+            <point key="canvasLocation" x="7" y="-149.5"/>
+        </view>
+    </objects>
+</document>

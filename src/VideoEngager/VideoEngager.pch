@@ -1,0 +1,41 @@
+//
+//  VideoEngager.pch
+//  VideoEngager
+//
+//  Created by Bozhko Terziev on 9/28/17.
+//  Copyright © 2017 VideoEngager. All rights reserved.
+//
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "VDENotificationCenter.h"
+
+// Application
+#import "DeviceData.h"
+
+#endif
+
+#import "Macroses.h"
+#import "UIConstants.h"
+
+#define BIND_SESSION_SUPPORTED 1
+
+#define WITH_POCO_SSL 1
+
+#define SQLITE_HAS_CODEC 1
+#define WITHOUT_DB_ENCRYPTION 1
+
+//#define WITHOUT_PUBSUB_VISITORS_EX 1
+
+//#define WITHOUT_SERVER_MESSAGE_HISTORY 1
+
+// C++ only
+#ifdef __cplusplus
+#import "ErrorMacros.h"
+#endif

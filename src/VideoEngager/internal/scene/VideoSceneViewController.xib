@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoSceneViewController">
+            <connections>
+                <outlet property="avatarView" destination="zXr-50-FTY" id="CM6-Ec-QTD"/>
+                <outlet property="backButton" destination="NnN-h9-BUZ" id="NC1-LO-PBY"/>
+                <outlet property="localViewContainer" destination="81K-FM-oje" id="78z-MN-V6K"/>
+                <outlet property="oneWayCallView" destination="Z58-rZ-t3i" id="fWZ-Fn-bq3"/>
+                <outlet property="oneWayCamNA" destination="SJz-oN-ExE" id="7e6-XJ-In3"/>
+                <outlet property="oneWayInfoLabel" destination="2Rn-gT-2Iw" id="g6r-qj-sue"/>
+                <outlet property="oneWayMicNA" destination="p0i-7H-b9F" id="Wfd-d6-v6E"/>
+                <outlet property="remoteViewContainer" destination="ki2-nx-fux" id="Vsm-7z-EM3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zXr-50-FTY" userLabel="avatarImageView">
+                    <rect key="frame" x="151" y="297" width="72" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="72" id="7MA-Mz-UaC"/>
+                        <constraint firstAttribute="height" constant="72" id="I94-01-GxQ"/>
+                    </constraints>
+                </imageView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ki2-nx-fux" userLabel="remoteViewContainer" customClass="VideoViewContainer">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="81K-FM-oje" userLabel="localViewContainer" customClass="VideoViewContainer">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z58-rZ-t3i" userLabel="oneWayCallView">
+                    <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The other party can hear and see you, but you won’t hear or see them. You can continue talking and chatting." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Rn-gT-2Iw" userLabel="infoLabel">
+                            <rect key="frame" x="10" y="10" width="220" height="154"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cameraNotAvailable" translatesAutoresizingMaskIntoConstraints="NO" id="SJz-oN-ExE" userLabel="cameraNAImageView">
+                            <rect key="frame" x="132" y="194" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="98O-fo-hMx" userLabel="height = 36"/>
+                                <constraint firstAttribute="width" constant="36" id="INk-kR-FKP" userLabel="width = 36"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="micNotAvailable" translatesAutoresizingMaskIntoConstraints="NO" id="p0i-7H-b9F" userLabel="micNAImageView">
+                            <rect key="frame" x="72" y="194" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="XM5-fR-oe1"/>
+                                <constraint firstAttribute="width" constant="36" id="hGc-y9-m31"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="p0i-7H-b9F" firstAttribute="top" secondItem="2Rn-gT-2Iw" secondAttribute="bottom" constant="30" id="7D0-pZ-VTR"/>
+                        <constraint firstItem="p0i-7H-b9F" firstAttribute="centerX" secondItem="Z58-rZ-t3i" secondAttribute="centerX" multiplier="0.75" id="907-cN-LDm"/>
+                        <constraint firstAttribute="width" constant="240" id="Ps3-iA-qRC"/>
+                        <constraint firstAttribute="bottom" secondItem="SJz-oN-ExE" secondAttribute="bottom" constant="10" id="Xcm-BN-HXC"/>
+                        <constraint firstItem="SJz-oN-ExE" firstAttribute="centerX" secondItem="Z58-rZ-t3i" secondAttribute="centerX" multiplier="1.25" id="b51-RC-Adk"/>
+                        <constraint firstItem="2Rn-gT-2Iw" firstAttribute="top" secondItem="Z58-rZ-t3i" secondAttribute="top" constant="10" id="ebI-FH-8nL"/>
+                        <constraint firstAttribute="bottom" secondItem="p0i-7H-b9F" secondAttribute="bottom" constant="10" id="j3g-ll-xn8"/>
+                        <constraint firstAttribute="height" constant="240" id="lj1-9e-J60"/>
+                        <constraint firstAttribute="trailing" secondItem="2Rn-gT-2Iw" secondAttribute="trailing" constant="10" id="mqC-Kz-UUM"/>
+                        <constraint firstItem="2Rn-gT-2Iw" firstAttribute="leading" secondItem="Z58-rZ-t3i" secondAttribute="leading" constant="10" id="rQ8-To-2Qi"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnN-h9-BUZ" userLabel="backButton">
+                    <rect key="frame" x="10" y="40" width="32" height="32"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="EGm-Vl-Vb3"/>
+                        <constraint firstAttribute="width" constant="32" id="HCu-aA-qy5"/>
+                    </constraints>
+                    <state key="normal" image="backArrow">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didClickBackButton:" destination="-1" eventType="touchUpInside" id="C71-Ip-EQK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ki2-nx-fux" secondAttribute="trailing" id="3LF-eD-sII"/>
+                <constraint firstItem="zXr-50-FTY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="4pY-fK-4He"/>
+                <constraint firstItem="ki2-nx-fux" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Iyi-lo-eXw"/>
+                <constraint firstItem="Z58-rZ-t3i" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K9r-qE-qns"/>
+                <constraint firstItem="Z58-rZ-t3i" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="NJl-wF-5ws"/>
+                <constraint firstItem="ki2-nx-fux" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OAI-Fd-S83"/>
+                <constraint firstItem="NnN-h9-BUZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="P4b-fl-JJu"/>
+                <constraint firstAttribute="bottom" secondItem="ki2-nx-fux" secondAttribute="bottom" id="aQh-4w-Sez"/>
+                <constraint firstItem="NnN-h9-BUZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="fIS-BC-R9A"/>
+                <constraint firstItem="zXr-50-FTY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iHf-sV-KXb"/>
+            </constraints>
+            <point key="canvasLocation" x="-48" y="15"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backArrow" width="13" height="20"/>
+        <image name="cameraNotAvailable" width="36" height="36"/>
+        <image name="micNotAvailable" width="36" height="36"/>
+    </resources>
+</document>

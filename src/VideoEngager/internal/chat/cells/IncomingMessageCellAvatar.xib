@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="IncomingMessageCellAvatar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6mk-pE-bFS" userLabel="AvatarView" customClass="AvatarView">
+                        <rect key="frame" x="10" y="5" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="hXO-a1-Dgm"/>
+                            <constraint firstAttribute="width" constant="48" id="peH-RC-OIn"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0EX-f0-lnT" userLabel="bubbleImageView">
+                        <rect key="frame" x="63" y="5" width="240" height="69.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Sender Name With Some More Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osk-2a-Fqe">
+                        <rect key="frame" x="74" y="15" width="183" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="9:30 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBU-Yx-wUl">
+                        <rect key="frame" x="262" y="22" width="37" height="11"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Some message" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bmT-Nm-uuk">
+                        <rect key="frame" x="74" y="35" width="225" height="35.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES" lookupSuggestion="YES"/>
+                    </textView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYe-ny-diG">
+                        <rect key="frame" x="74" y="34" width="225" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="trP-kZ-EjJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fYe-ny-diG" firstAttribute="trailing" secondItem="UBU-Yx-wUl" secondAttribute="trailing" id="3nx-Tz-iJV"/>
+                    <constraint firstItem="bmT-Nm-uuk" firstAttribute="leading" secondItem="0EX-f0-lnT" secondAttribute="leading" constant="11" id="5f5-bV-uyg"/>
+                    <constraint firstItem="bmT-Nm-uuk" firstAttribute="top" secondItem="osk-2a-Fqe" secondAttribute="bottom" constant="2" id="Dq1-Vx-igi"/>
+                    <constraint firstItem="0EX-f0-lnT" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="240:320" id="Gsf-K6-5Te"/>
+                    <constraint firstItem="fYe-ny-diG" firstAttribute="leading" secondItem="osk-2a-Fqe" secondAttribute="leading" id="H3k-TR-ln6"/>
+                    <constraint firstItem="osk-2a-Fqe" firstAttribute="top" secondItem="0EX-f0-lnT" secondAttribute="top" constant="10" id="Jyu-gc-Cyl"/>
+                    <constraint firstItem="6mk-pE-bFS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="NJK-xv-TD0"/>
+                    <constraint firstItem="bmT-Nm-uuk" firstAttribute="bottom" secondItem="0EX-f0-lnT" secondAttribute="bottom" constant="-4" id="PT9-v9-fjD"/>
+                    <constraint firstAttribute="bottom" secondItem="0EX-f0-lnT" secondAttribute="bottom" constant="5" id="QLC-nu-tRt"/>
+                    <constraint firstItem="osk-2a-Fqe" firstAttribute="bottom" secondItem="UBU-Yx-wUl" secondAttribute="bottom" id="QSQ-nk-hDe"/>
+                    <constraint firstItem="fYe-ny-diG" firstAttribute="top" secondItem="UBU-Yx-wUl" secondAttribute="bottom" constant="1" id="gB1-tl-dsA"/>
+                    <constraint firstItem="bmT-Nm-uuk" firstAttribute="trailing" secondItem="0EX-f0-lnT" secondAttribute="trailing" constant="-4" id="qHx-fG-bJN"/>
+                    <constraint firstItem="UBU-Yx-wUl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="osk-2a-Fqe" secondAttribute="trailing" constant="5" id="shW-nz-dYp"/>
+                    <constraint firstItem="6mk-pE-bFS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tFk-tB-pzD"/>
+                    <constraint firstItem="0EX-f0-lnT" firstAttribute="leading" secondItem="6mk-pE-bFS" secondAttribute="trailing" constant="5" id="ucS-R7-4Dy"/>
+                    <constraint firstItem="UBU-Yx-wUl" firstAttribute="trailing" secondItem="0EX-f0-lnT" secondAttribute="trailing" constant="-4" id="uhs-7C-lrm"/>
+                    <constraint firstItem="0EX-f0-lnT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="wB1-j2-Iau"/>
+                    <constraint firstItem="osk-2a-Fqe" firstAttribute="leading" secondItem="0EX-f0-lnT" secondAttribute="leading" constant="11" id="yEX-8N-i7l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="avatarView" destination="6mk-pE-bFS" id="k3w-he-QtQ"/>
+                <outlet property="constraintAvatarViewLeft" destination="tFk-tB-pzD" id="Bks-SE-Vp4"/>
+                <outlet property="constraintAvatarViewWidth" destination="peH-RC-OIn" id="sVz-mA-PY2"/>
+                <outlet property="constraintBubbleBottom" destination="QLC-nu-tRt" id="wUY-GC-UcP"/>
+                <outlet property="constraintBubbleTop" destination="wB1-j2-Iau" id="PJN-5o-jKw"/>
+                <outlet property="constraintBubbleWidth" destination="Gsf-K6-5Te" id="sYN-FD-dYt"/>
+                <outlet property="constraintLabelSenderTop" destination="Jyu-gc-Cyl" id="2CX-xx-mhr"/>
+                <outlet property="constraintTextViewBottom" destination="PT9-v9-fjD" id="WXN-V8-TGV"/>
+                <outlet property="constraintTextViewLeft" destination="5f5-bV-uyg" id="CdC-03-ZSD"/>
+                <outlet property="constraintTextViewRight" destination="qHx-fG-bJN" id="56p-X4-Cm0"/>
+                <outlet property="constraintTextViewVerticalSpaceToLabelSender" destination="Dq1-Vx-igi" id="7E5-1o-WwJ"/>
+                <outlet property="imageViewBubble" destination="0EX-f0-lnT" id="pKh-hW-2Il"/>
+                <outlet property="labelSender" destination="osk-2a-Fqe" id="KIu-gM-kD3"/>
+                <outlet property="labelTime" destination="UBU-Yx-wUl" id="OCG-1A-Sbm"/>
+                <outlet property="textViewMessage" destination="bmT-Nm-uuk" id="8cb-ud-3IF"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
